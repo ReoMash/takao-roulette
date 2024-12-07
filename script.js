@@ -5,6 +5,7 @@ const items = document.querySelector('.items');
 startButton.addEventListener('click', () => {
   title.style.opacity = 0;
   startButton.style.opacity = 0;
+  startButton.disabled = true;
 
   // Reset animation
   items.style.animation = 'none';
@@ -31,6 +32,7 @@ startButton.addEventListener('click', () => {
       );
       title.style.opacity = 100;
       startButton.style.opacity = 100;
+      startButton.disabled = false;
     }, 300);
   }, 2000);
 });
