@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  margin: 0;
+  background-color: beige;
+  overflow: hidden;
+}
+
+h2 {
+  font-family: 'ヒラギノ明朝 Pro W3';
+  font-style: italic;
+}
+
+.roulette-container {
+  text-align: center;
+}
+
+.slot {
+  width: 75vh;
+  height: 50px;
+  overflow: hidden;
+  border: 2px solid #333;
+  margin: 0 auto 20px;
+  position: relative;
+  background-color: white;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  animation: none;
+}
+
+.items div {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-300px);
+  } /* Adjust based on number of items */
+}
